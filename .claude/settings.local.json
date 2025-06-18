@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(make:*)",
+      "Bash(./esc_ecu)",
+      "Bash(CFLAGS=\"-Wall -std=c99 -O2 -g\" make)",
+      "Bash(gcc:*)",
+      "Bash(git checkout:*)",
+      "Bash(grep:*)",
+      "Bash(pkill:*)",
+      "Bash(true)",
+      "Bash(./brake_demo)",
+      "Bash(./engine_demo)",
+      "Bash(timeout:*)",
+      "Bash(./dtc_demo)",
+      "Bash(sed:*)",
+      "Bash(./post_demo)",
+      "Bash(./logging_demo)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}

@@ -1,0 +1,31 @@
+# Makefile for Brake Demo
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99 -O2 -g
+LDFLAGS = -lm -lpthread
+TARGET = brake_demo
+SOURCES = brake_demo.c brake_actuation.c
+OBJECTS = $(SOURCES:.c=.o)
+HEADERS = brake_actuation.h esc_types.h
+
+# Default target
+all: $(TARGET)
+
+# Build the executable
+$(TARGET): $(OBJECTS)
+	$(CC) $(OBJECTS) -o $(TARGET) $(LDFLAGS)
+	@echo "Build complete: $(TARGET)"
+
+# Compile source files
+%.o: %.c $(HEADERS)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Clean build artifacts
+clean:
+	rm -f $(OBJECTS) $(TARGET)
+	@echo "Clean complete"
+
+# Run the demo
+run: $(TARGET)
+	./$(TARGET)
+
+.PHONY: all clean run

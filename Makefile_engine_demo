@@ -1,0 +1,31 @@
+# Makefile for Engine Torque Demo
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99 -O2 -g
+LDFLAGS = -lm -lpthread
+TARGET = engine_demo
+SOURCES = engine_demo.c engine_torque_interface.c
+OBJECTS = $(SOURCES:.c=.o)
+HEADERS = engine_torque_interface.h esc_types.h
+
+# Default target
+all: $(TARGET)
+
+# Build the executable
+$(TARGET): $(OBJECTS)
+	$(CC) $(OBJECTS) -o $(TARGET) $(LDFLAGS)
+	@echo "Build complete: $(TARGET)"
+
+# Compile source files
+%.o: %.c $(HEADERS)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Clean build artifacts
+clean:
+	rm -f $(OBJECTS) $(TARGET)
+	@echo "Clean complete"
+
+# Run the demo
+run: $(TARGET)
+	./$(TARGET)
+
+.PHONY: all clean run
