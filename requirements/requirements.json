@@ -1,0 +1,20 @@
+[
+    {
+        "id": "JIRA-004",
+        "title": "Brake Actuation Command Interface Module",
+        "description": "Implement a software module that constructs and formats brake actuation commands for both PWM and CAN-based brake modulators. The logic must conform to ESC brake control interface specifications.",
+        "verifiableByCodeOnly": true
+    },
+    {
+        "id": "JIRA-005",
+        "title": "Engine Torque Reduction CAN Interface",
+        "description": "Implement a CAN messaging interface that encodes and sends torque reduction requests to the engine ECU, including all message identifiers and payload structure required by the ESC system.",
+        "verifiableByCodeOnly": true
+    },
+    {
+        "id": "JIRA-008",
+        "title": "ESC CAN Messaging Stack",
+        "description": "Develop the CAN bus messaging logic to transmit ESC system status and receive external control messages. Include implementation of error detection, timing supervision, and message prioritization logic.",
+        "verifiableByCodeOnly": true
+    }
+]
