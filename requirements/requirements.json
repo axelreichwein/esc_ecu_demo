@@ -1,20 +1,104 @@
-[
-    {
-        "id": "JIRA-004",
-        "title": "Brake Actuation Command Interface Module",
-        "description": "Implement a software module that constructs and formats brake actuation commands for both PWM and CAN-based brake modulators. The logic must conform to ESC brake control interface specifications.",
-        "verifiableByCodeOnly": true
-    },
-    {
-        "id": "JIRA-005",
-        "title": "Engine Torque Reduction CAN Interface",
-        "description": "Implement a CAN messaging interface that encodes and sends torque reduction requests to the engine ECU, including all message identifiers and payload structure required by the ESC system.",
-        "verifiableByCodeOnly": true
-    },
-    {
-        "id": "JIRA-008",
-        "title": "ESC CAN Messaging Stack",
-        "description": "Develop the CAN bus messaging logic to transmit ESC system status and receive external control messages. Include implementation of error detection, timing supervision, and message prioritization logic.",
-        "verifiableByCodeOnly": true
-    }
-]
+{
+    "expand": "schema,names",
+    "startAt": 0,
+    "maxResults": 3,
+    "total": 3,
+    "issues": [
+        {
+            "id": "20003",
+            "key": "JIRA-004",
+            "fields": {
+                "summary": "Brake Actuation Command Interface Module",
+                "issuetype": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/issuetype/100",
+                    "id": "100",
+                    "description": "A software requirement",
+                    "name": "Requirement"
+                },
+                "status": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/status/1",
+                    "id": "1",
+                    "name": "Open"
+                },
+                "assignee": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/user?accountId=unassigned",
+                    "displayName": "Unassigned",
+                    "accountId": "unassigned"
+                },
+                "reporter": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/user?accountId=system",
+                    "displayName": "System",
+                    "accountId": "system"
+                },
+                "created": "2025-06-24T00:00:00.000-0700",
+                "updated": "2025-06-24T00:00:00.000-0700",
+                "description": "Implement a software module that constructs and formats brake actuation commands for both PWM and CAN-based brake modulators. The logic must conform to ESC brake control interface specifications.",
+                "verifiableByCodeOnly": true
+            }
+        },
+        {
+            "id": "20004",
+            "key": "JIRA-005",
+            "fields": {
+                "summary": "Engine Torque Reduction CAN Interface",
+                "issuetype": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/issuetype/100",
+                    "id": "100",
+                    "description": "A software requirement",
+                    "name": "Requirement"
+                },
+                "status": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/status/1",
+                    "id": "1",
+                    "name": "Open"
+                },
+                "assignee": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/user?accountId=unassigned",
+                    "displayName": "Unassigned",
+                    "accountId": "unassigned"
+                },
+                "reporter": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/user?accountId=system",
+                    "displayName": "System",
+                    "accountId": "system"
+                },
+                "created": "2025-06-24T00:00:00.000-0700",
+                "updated": "2025-06-24T00:00:00.000-0700",
+                "description": "Implement a CAN messaging interface that encodes and sends torque reduction requests to the engine ECU, including all message identifiers and payload structure required by the ESC system.",
+                "verifiableByCodeOnly": true
+            }
+        },
+        {
+            "id": "20005",
+            "key": "JIRA-008",
+            "fields": {
+                "summary": "ESC CAN Messaging Stack",
+                "issuetype": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/issuetype/100",
+                    "id": "100",
+                    "description": "A software requirement",
+                    "name": "Requirement"
+                },
+                "status": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/status/1",
+                    "id": "1",
+                    "name": "Open"
+                },
+                "assignee": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/user?accountId=unassigned",
+                    "displayName": "Unassigned",
+                    "accountId": "unassigned"
+                },
+                "reporter": {
+                    "self": "https://your-domain.atlassian.net/rest/api/2/user?accountId=system",
+                    "displayName": "System",
+                    "accountId": "system"
+                },
+                "created": "2025-06-24T00:00:00.000-0700",
+                "updated": "2025-06-24T00:00:00.000-0700",
+                "description": "Develop the CAN bus messaging logic to transmit ESC system status and receive external control messages. Include implementation of error detection, timing supervision, and message prioritization logic.",
+                "verifiableByCodeOnly": true
+            }
+        }
+    ]
+}
